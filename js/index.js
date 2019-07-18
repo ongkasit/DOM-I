@@ -106,10 +106,27 @@ console.log(mainContentPTag[7].textContent = 'sales@greatidea.io');
 console.log(mainContentPTag[8].textContent = 'Copyright Great Idea! 2018');
 
 // Change Styling 
-// const styles = document.querySelectorAll('x');
-// Element.forEach(function (currentValue) {
-//     currentValue.style.color = '';
-// });
+
+const navStyles = document.querySelectorAll('a');
+// navStyles[0].style.color = 'green';
+
+navStyles.forEach(function(currentValue) {
+    currentValue.style.color = 'green';
+});
+
+const newNavTag = document.createElement('a');
+newNavTag.textContent = 'Awesome';
+newNavTag.style.color = 'green';
+
+const newerNavTag = document.createElement('a');
+newerNavTag.textContent = 'Poop';
+newerNavTag.style.color = 'green';
+
+const navContainer = document.querySelector('nav');
+navContainer.append(newNavTag);
+navContainer.prepend(newerNavTag);
+
+
 
 // Element.forEach (currentValue => currentValue.style.color = '');
 
