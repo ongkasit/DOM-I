@@ -43,20 +43,20 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Nav Bar
 const navBar = document.querySelectorAll('a');
-console.log(navBar[0].textContent = 'Services');
-console.log(navBar[1].textContent = 'Product');
-console.log(navBar[2].textContent = 'Vision');
-console.log(navBar[3].textContent = 'Features');
-console.log(navBar[4].textContent = 'About');
-console.log(navBar[5].textContent = 'Contact');
+navBar[0].textContent = 'Services';
+navBar[1].textContent = 'Product';
+navBar[2].textContent = 'Vision';
+navBar[3].textContent = 'Features';
+navBar[4].textContent = 'About';
+navBar[5].textContent = 'Contact';
 
 
 // CTA
 const ctaContent = document.querySelector('h1');
-console.log(ctaContent.textContent = 'DOM IS AWESOME');
+ctaContent.textContent = 'DOM IS AWESOME';
 
 const ctaButton = document.querySelector('button');
-console.log(ctaButton.textContent = 'Get Started');
+ctaButton.textContent = 'Get Started';
 
 const ctaImg = document.querySelector('#cta-img');
 
@@ -71,18 +71,18 @@ ctaImg.alt = 'Image of a code snippet.'
 
 // Main-Content
 const mainContentHeader = document.querySelectorAll('h4');
-console.log(mainContentHeader[0].textContent = 'Features');
-console.log(mainContentHeader[1].textContent = 'About');
-console.log(mainContentHeader[2].textContent = 'Services');
-console.log(mainContentHeader[3].textContent = 'Product');
-console.log(mainContentHeader[4].textContent = 'Vision');
+mainContentHeader[0].textContent = 'Features';
+mainContentHeader[1].textContent = 'About';
+mainContentHeader[2].textContent = 'Services';
+mainContentHeader[3].textContent = 'Product';
+mainContentHeader[4].textContent = 'Vision';
 
 const mainContentPTag = document.querySelectorAll('p');
-console.log(mainContentPTag[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.')
-console.log(mainContentPTag[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.')
-console.log(mainContentPTag[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.')
-console.log(mainContentPTag[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.')
-console.log(mainContentPTag[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.')
+mainContentPTag[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+mainContentPTag[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+mainContentPTag[2].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+mainContentPTag[3].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+mainContentPTag[4].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
 const middleImg = document.querySelector('.middle-img');
 // Method 1
@@ -93,17 +93,17 @@ middleImg.src = 'img/mid-page-accent.jpg';
 middleImg.alt = 'Image of code snippets across the screen.'
 
 // Contact
-console.log(mainContentHeader[5].textContent = 'Contact');
-console.log(mainContentPTag[5].textContent = '123 Way 456 Street Somewhere, USA');
-console.log(mainContentPTag[6].textContent = '1 (888) 888-8888');
-console.log(mainContentPTag[7].textContent = 'sales@greatidea.io');
+mainContentHeader[5].textContent = 'Contact';
+mainContentPTag[5].textContent = '123 Way 456 Street Somewhere, USA';
+mainContentPTag[6].textContent = '1 (888) 888-8888';
+mainContentPTag[7].textContent = 'sales@greatidea.io';
 
 
 // Footer
 // const footer = document.querySelector('.footer');
 // console.log(footer);
 
-console.log(mainContentPTag[8].textContent = 'Copyright Great Idea! 2018');
+mainContentPTag[8].textContent = 'Copyright Great Idea! 2018';
 
 // Change Styling 
 
@@ -119,11 +119,11 @@ newNavTag.textContent = 'Awesome';
 newNavTag.style.color = 'green';
 
 const newerNavTag = document.createElement('a');
-newerNavTag.textContent = 'Poop';
+newerNavTag.textContent = 'More Awesome';
 newerNavTag.style.color = 'green';
 
 const navContainer = document.querySelector('nav');
-navContainer.append(newNavTag);
+navContainer.appendChild(newNavTag);
 navContainer.prepend(newerNavTag);
 
 
